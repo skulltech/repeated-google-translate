@@ -22,6 +22,7 @@ def main():
 	group.add_argument('-t', '--text', type=str, help='Input text.')
 	group.add_argument('-f', '--file', type=str, help='File containing input text.')
 	parser.add_argument('-n', '--num', type=int, help='Number of time to go through the languages.', default=10)
+	parser.add_argument('-o', '--out', type=str, help='File to write output text into.')
 	parser.add_argument('-l', '--langs', type=str, nargs='+', help='ISO 639-1 codes of the languages to use.', default=['de', 'ko', 'la', 'ja', 'eo'])
 	args = parser.parse_args()
 
@@ -31,9 +32,16 @@ def main():
 	else:
 		text = args.text
 
+
 	print('[*] "{}..." but translated {} times!'.format(text[:10].strip(), args.num*len(args.langs)))
-	print()
-	print(rgt(text, args.langs, args.num))
+	result = rgt(text, args.langs, args.num)
+	if args.out:
+		with open(args.out, mode='w') as f:
+			f.write(result)
+		print('[*] Wrote output to {}'.format(args.out))
+	else:
+		print()
+		print(result)
 
 
 

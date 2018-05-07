@@ -21,13 +21,15 @@ $ pip3 install googletrans
 
 ```console
 sumit@HAL9000:~/repeated-google-translate$ python3 rgt.py -h
-usage: rgt.py [-h] (-t TEXT | -f FILE) [-n NUM] [-l LANGS [LANGS ...]]
+usage: rgt.py [-h] (-t TEXT | -f FILE) [-n NUM] [-o OUT]
+              [-l LANGS [LANGS ...]]
 
 optional arguments:
   -h, --help            show this help message and exit
   -t TEXT, --text TEXT  Input text.
   -f FILE, --file FILE  File containing input text.
   -n NUM, --num NUM     Number of time to go through the languages.
+  -o OUT, --out OUT     File to write output text into.
   -l LANGS [LANGS ...], --langs LANGS [LANGS ...]
                         ISO 639-1 codes of the languages to use.
 ```
