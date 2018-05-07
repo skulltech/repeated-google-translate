@@ -15,5 +15,13 @@ def rgt(text, langs, times):
 
 	return translation
 
+def main():
+	parser = argparse.ArgumentParser()
+	group = parser.add_mutually_exclusive_group(required=True)
+	group.add_argument('-t', '--text', type=str, help='Input text.')
+	group.add_argument('-f', '--file', type=str, help='File containing input text.')
+	text = parser.add_argument('-l', '--langs', type=str, nargs='+', help='Languages to use.')
+	args = parser.parse_args()
+
 
 print(rgt('This food is very nice!', ['de', 'ko', 'la', 'ja', 'eo'], 5))
