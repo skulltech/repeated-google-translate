@@ -17,7 +17,7 @@ def rgt(text, langs, times):
 
 
 def main():
-	parser = argparse.ArgumentParser()
+	parser = argparse.ArgumentParser(description='Translate text repeatedly using Google Translate. For the keks and memes.')
 	group = parser.add_mutually_exclusive_group(required=True)
 	group.add_argument('-t', '--text', type=str, help='Input text.')
 	group.add_argument('-f', '--file', type=str, help='File containing input text.')

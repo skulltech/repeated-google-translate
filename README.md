@@ -24,6 +24,8 @@ sumit@HAL9000:~/repeated-google-translate$ python3 rgt.py -h
 usage: rgt.py [-h] (-t TEXT | -f FILE) [-n NUM] [-o OUT]
               [-l LANGS [LANGS ...]]
 
+Translate text repeatedly using Google Translate. For the keks and memes.
+
 optional arguments:
   -h, --help            show this help message and exit
   -t TEXT, --text TEXT  Input text.
