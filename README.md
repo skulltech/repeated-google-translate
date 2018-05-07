@@ -36,6 +36,11 @@ optional arguments:
                         ISO 639-1 codes of the languages to use.
 ```
 
+The default values of the optional arguments are
+
+    * NUM 10
+    * LANGS ['de', 'ko', 'la', 'ja', 'eo']
+
 A simple use-case can be as follows
 ```console
 sumit@HAL9000:~/repeated-google-translate$ python3 rgt.py -t "There's vomit on his sweater already, mom's spaghetti"
