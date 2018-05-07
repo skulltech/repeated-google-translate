@@ -1,6 +1,13 @@
 # repeated-google-translate
 A script to translate a text repeatedly using Google Translate. For the keks and memes.
 
+## What is this and how is this useful?!
+This script uses the advanced mind of Google Translate to figure out the hidden meanings behind ordinary english text.
+Inspired by the following _meme_-videos.
+
+- [Gucci Gang but it's been Google translated over 500 times](https://youtu.be/HMReGXCtTiM)
+- [Pumped Up Kicks but it's been Google translated](https://youtu.be/ZMR395zmT1k)
+
 ## Installation
 
 Clone or download the `rgt.py` script.
